@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+    <rect x="50" y="50" width="40" height="40" stroke-width='3' stroke="#D87B2F" fill="none">
+        <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="2s" repeatCount="indefinite" />
+    </rect>
+    <rect x="100" y="50" width="40" height="40" stroke-width='3' stroke="#2FB3D8" fill="none">
+        <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="3s" repeatCount="indefinite" />
+    </rect>
+    <rect x="50" y="100" width="40" height="40" stroke-width='3' stroke="#D85656" fill="none">
+        <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="3s" repeatCount="indefinite" />
+    </rect>
+    <rect x="100" y="100" width="40" height="40" stroke-width='3' stroke="#A577EA" fill="none">
+        <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="1s" repeatCount="indefinite" />
+    </rect>
+</svg>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        #loader {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: 9999;
+            background: url('images/logo.svg') no-repeat center center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loader"></div>
+    <div id="contents">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem id placeat vitae ex sequi asperiores. Cum
+            aperiam error iste obcaecati alias tempore similique, quod aliquid iure magnam doloribus, quia odit.</p>
+        <p>Reiciendis est tenetur aut pariatur maxime. Sunt quos deserunt in, similique recusandae doloribus optio,
+            explicabo soluta voluptates cupiditate maiores consequuntur iste vero. Repellat voluptas animi aut dolore
+            neque, veniam excepturi?</p>
+        <p>Ea, eius? Praesentium cumque, soluta dolorum quia quibusdam modi in illum numquam veritatis rerum deleniti
+            aspernatur tempore iste eum tempora incidunt molestiae eaque. Dignissimos laboriosam nisi vitae sequi,
+            facere molestiae.</p>
+        <p>Eius eos repellendus doloremque ullam omnis labore rerum velit, blanditiis pariatur iusto vitae odio
+            temporibus atque quis in dignissimos repudiandae. Iusto, iste hic in nostrum amet dolorum dignissimos
+            aspernatur exercitationem.</p>
+        <p>Exercitationem vero quam praesentium harum qui, nesciunt distinctio odio nemo consequatur ipsum quis fugit
+            vitae totam laboriosam sed ducimus officiis tempore. Doloremque praesentium aliquam excepturi itaque nostrum
+            laborum minima tempora!</p>
+    </div>
+    <script>
+        document.onreadystatechange = function () {
+            let state = document.readyState
+            if (state == "interactive") {
+                document.getElementById("contents").style.visibility = "hidden";
+                document.getElementById("load").style.visibility = "visible";
+            }
+            else if (state == 'complete') {
+                setTimeout(function () {
+                    document.getElementById('loader').style.visibility = "hidden";
+                    document.getElementById("contents").style.visibility = "visible";
+                }, 2000);
+            }
+        }
+    </script>
+</body>
+
+</html>
